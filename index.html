@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="history">
+            <h2>Historial</h2>
+            <ul id="historyList"></ul>
+        </div>
+        <div class="main-content">
+            <h1>Encriptador SEEDS</h1>
+            <textarea id="inputText" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="buttons">
+                <button onclick="encrypt()">ENCRIPTAR</button>
+                <button onclick="decrypt()">DESENCRIPTAR</button>
+            </div>
+        </div>
+        <div class="output">
+            <h2>RESULTADO</h2>
+            <textarea id="outputText" readonly placeholder="El resultado aparecerá aquí"></textarea>
+            <button onclick="copyText()">COPIAR TEXTO</button>
+            <img id="statusImage" src="assets/noencriptado.png" alt="Estado de encriptación">
+        </div>
+    </div>
+    <footer>
+        <p>Desarrollado por JhonnySeeds - 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
